@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções de Instalação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instruções para Instalar o Ubiquity Slideshow</h1>
+    
+    <p>Para baixar e instalar o <code>ubiquity-slideshow-bigOs</code>, siga as instruções abaixo:</p>
+    
+    <h2>1. Baixar o Arquivo</h2>
+    <p>Clique no link abaixo para baixar o arquivo:</p>
+    <a href="https://github.com/edxlinux993/edxlinux/raw/main/ubiquity-slideshow-bigOs.tar.gz" download>
+        Baixar ubiquity-slideshow-bigOs.tar.gz
+    </a>
+    
+    <h2>2. Instruções de Uso</h2>
+    <p>Abra o terminal e siga os passos abaixo:</p>
+    <pre>
+# Torne-se root
+sudo -i
+
+# Navegue até o diretório /usr/share
+cd /usr/share
+
+# Baixe o arquivo usando wget
+wget https://github.com/edxlinux993/edxlinux/raw/main/ubiquity-slideshow-bigOs.tar.gz
+
+# Descompacte o arquivo
+tar -vzxf ubiquity-slideshow-bigOs.tar.gz
+
+# Liste os arquivos no diretório para verificar a pasta descompactada
+ls
+
+# Você verá a pasta ubiquity-slideshow-bigOs. Para remover o arquivo compactado, use:
+rm ubiquity-slideshow-bigOs.tar.gz
+
+# Atualize o cache
+sudo update-ubiquity
+    </pre>
+    
+    <h2>Imagens</h2>
+    <p>Aqui estão algumas imagens relacionadas:</p>
+    <img src="/home/kira/edxos-plus-.jpg" alt="Imagem Edxos Plus">
+    <img src="/home/kira/splash.png" alt="Imagem Splash">
+    
+    <p>Certifique-se de que as imagens estejam localizadas nos caminhos especificados para que apareçam corretamente.</p>
+</body>
+</html>
+
