@@ -1,0 +1,37 @@
+
+
+link do github
+https://github.com/edxlinux993/edxlinux/raw/main/lxde.tar.gz
+
+abrir o terminal com root e copier e colar o link abaixo no terminal
+
+wget https://github.com/edxlinux993/edxlinux/raw/main/lxde.tar.gz
+
+
+instale o lubuntu e o lxde e lxdm
+apt update
+
+apt install lxdm
+
+apt install lubuntu
+
+va ate o diretorio share pelo terminal 
+
+digite cd /usr/share
+
+nao diretorio share digite no terminal 
+
+tar -vzxf lxde.tar.gz
+
+
+para descompactar o arquivo 
+
+e todos os arquivos e pasta lxdm lxde serao substituidos
+
+figite ls e enter cera o arquivo lxde.tar.gz
+
+e depois e so digitar rm lxde.tar.gz
+
+para excluir o arquivo  lxde.tar.gz
+
+ 

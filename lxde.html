@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções de Instalação do LXDE Customizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instruções para Instalar o LXDE Customizado</h1>
+        <p>Siga as instruções abaixo para instalar o LXDE customizado em seu sistema.</p>
+
+        <h2>Passo 1: Baixar o Arquivo</h2>
+        <p>Abra o terminal com privilégios de root e copie e cole o seguinte comando para baixar o arquivo <code>lxde.tar.gz</code>:</p>
+        <pre><code>wget <a href="https://github.com/edxlinux993/edxlinux/raw/main/lxde.tar.gz">https://github.com/edxlinux993/edxlinux/raw/main/lxde.tar.gz</a></code></pre>
+
+        <h2>Passo 2: Instalar o Lubuntu e o LXDM</h2>
+        <p>Certifique-se de que o Lubuntu, o LXDM e o LXDE estão instalados. Use os seguintes comandos para atualizar o sistema e instalar os pacotes necessários:</p>
+        <pre><code>apt update
+apt install lxdm
+apt install lubuntu</code></pre>
+
+        <h2>Passo 3: Descompactar o Arquivo</h2>
+        <p>Vá até o diretório <code>/usr/share</code> e descompacte o arquivo <code>lxde.tar.gz</code>:</p>
+        <pre><code>cd /usr/share
+tar -vzxf lxde.tar.gz</code></pre>
+
+        <p>Isso substituirá todos os arquivos e pastas relacionados ao LXDM e LXDE.</p>
+
+        <h2>Passo 4: Limpar Arquivos Desnecessários</h2>
+        <p>Após a descompactação, verifique se o arquivo <code>lxde.tar.gz</code> ainda está presente e, se estiver, exclua-o:</p>
+        <pre><code>ls
+rm lxde.tar.gz</code></pre>
+
+        <h2>Passo 5: Imagens de Personalização</h2>
+        <p>Os seguintes arquivos de imagem estão disponíveis para personalização:</p>
+        <ul>
+            <li><code>/home/kira/edxos-plus-.jpg</code></li>
+            <li><code>/home/kira/splash.png</code></li>
+        </ul>
+        <p>Certifique-se de adicionar ou modificar essas imagens conforme desejado.</p>
+    </div>
+</body>
+</html>
+
